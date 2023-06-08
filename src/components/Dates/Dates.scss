@@ -9,7 +9,10 @@
     gap: 17px;
 
     svg {
+      width: 20px;
+      height: 20px;
       padding: 5px;
+      color: #adbfdf;
       fill: #adbfdf;
       transition: all 0.2s ease;
       cursor: pointer;
@@ -32,6 +35,8 @@
     cursor: pointer;
 
     svg {
+      width: 30px;
+      height: 30px;
       fill: #adbfdf;
       transition: all 0.2s ease;
     }
