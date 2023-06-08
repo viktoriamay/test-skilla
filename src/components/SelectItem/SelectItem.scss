@@ -1,0 +1,16 @@
+.react-select__control {
+  outline: none !important;
+  appearance: none !important;
+  background-color: transparent;
+  border: none;
+  font-size: 14px !important;
+  cursor: pointer;
+  color: #5e7793 !important;
+  font-family: inherit !important;
+  opacity: 0.87 !important;
+}
+
+.react-select__menu {
+  position: absolute !important;
+  z-index: 10000 !important;
+}
