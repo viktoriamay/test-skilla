@@ -71,7 +71,6 @@ export const CallItem = ({ call }) => {
           });
           const url = window.URL.createObjectURL(blob);
           setAudioUrl(url);
-          console.log({ audio: url });
         }
       } catch (error) {
         setError(error.message);

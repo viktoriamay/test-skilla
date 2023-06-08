@@ -56,8 +56,8 @@ export const CallsSection = () => {
             </span>
           </div>
           <div className="calls_section__table_calls">
-            {calls.map((call) => (
-              <CallItem call={call} />
+            {calls.map((call, index) => (
+              <CallItem key={`callItem-${index}`} call={call} />
             ))}
           </div>
         </div>
