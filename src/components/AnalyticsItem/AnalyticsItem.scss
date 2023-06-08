@@ -1,0 +1,48 @@
+.analytics_item {
+  &__title {
+    padding: 0;
+    margin: 0 0 7px 0;
+  }
+
+  &__bar {
+    width: 156px;
+    height: 6px;
+    background: #dee6f5;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  &__bar_color {
+    width: 156px;
+    height: 100%;
+    display: block;
+    background-color: #28a879;
+  }
+}
+
+.green {
+  color: #28a879;
+
+  &_bg {
+    width: 68px;
+    background-color: #28a879;
+  }
+}
+
+.yellow {
+  color: #ffd500;
+
+  &_bg {
+    width: 67px;
+    background-color: #ffd500;
+  }
+}
+
+.red {
+  color: #ea1a4f;
+
+  &_bg {
+    width: 78px;
+    background-color: #ea1a4f;
+  }
+}
