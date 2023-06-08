@@ -49,7 +49,8 @@ function App() {
           endDate.toLocaleDateString('fr-CA'),
           inOut
         )
-        .then((data) => setCalls(data.results));
+        .then((data) => setCalls(data.results))
+        .catch((error) => console.error(error));
     }
   }, [endDate, inOut, startDate]);
 
