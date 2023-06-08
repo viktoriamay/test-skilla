@@ -1,0 +1,132 @@
+.dates {
+  position: relative;
+  margin-right: 20px;
+  margin-bottom: 3px;
+
+  &__button_wrapper {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+
+    svg {
+      padding: 5px;
+      fill: #adbfdf;
+      transition: all 0.2s ease;
+      cursor: pointer;
+
+      &:hover {
+        fill: #002cfb;
+      }
+    }
+  }
+
+  &__button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: none;
+    color: #005ff8;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+
+    svg {
+      fill: #adbfdf;
+      transition: all 0.2s ease;
+    }
+
+    &:hover svg {
+      fill: #002cfb;
+    }
+  }
+
+  &__options {
+    position: absolute;
+    top: 30px;
+    right: -22px;
+    z-index: 50;
+    width: 204px;
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    border: 1px solid #eaf0fa;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.2s ease;
+    box-shadow: 0px 0px 26px rgba(233, 237, 243, 0.8);
+    border-radius: 4px;
+  }
+
+  &__options_visible {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &__option {
+    width: 100%;
+    padding: 12px 0 12px 20px;
+    text-align: left;
+    background-color: transparent;
+    color: #899cb1;
+    font-family: inherit;
+    cursor: pointer;
+    border: none;
+    transition: all 0.2s ease;
+
+    &:hover {
+      background-color: #dee4fe;
+      color: #122945;
+    }
+  }
+
+  &__option_active {
+    color: #005ff8;
+  }
+
+  &__option:first-child {
+    border-radius: 4px 4px 0 0;
+  }
+
+  &__option_calendar {
+    color: #122945;
+    position: relative;
+    border-radius: 0 0 4px 4px;
+
+    &::after {
+      content: url('./icons/calendar.svg');
+      position: absolute;
+      bottom: 16px;
+      right: 15px;
+      z-index: 100;
+      pointer-events: none;
+    }
+  }
+
+  &__option:hover &__input {
+    background-color: #dee4fe;
+    color: #122945;
+  }
+
+  &__input {
+    position: relative;
+    width: 100%;
+    padding: 10px 0 6px;
+    font-family: inherit;
+    font-size: 12px;
+    color: #adbfdf;
+    border: none;
+    transition: all 0.2s ease;
+
+    &:focus {
+      border: none;
+      outline: none;
+    }
+  }
+
+  &__input_calendar {
+    position: absolute;
+    transform: translate3d(-188px, -158px, 0) !important;
+    inset: initial !important;
+  }
+}
