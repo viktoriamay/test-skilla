@@ -1,0 +1,45 @@
+.menu {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 240px;
+  background-color: #091336;
+
+  &__buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-top: 64px;
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 0 20px;
+    padding: 14px 20px;
+    background: #005ff8;
+    color: #ffffff;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+
+    &:hover {
+      background-color: #0024cb;
+    }
+  }
+
+  &__button_title_add {
+    margin-right: 17px;
+  }
+
+  &__button_title_pay {
+    margin-right: 33px;
+  }
+}
+
+.logo {
+  cursor: pointer;
+  margin: 20px 0 32px 12px;
+}
