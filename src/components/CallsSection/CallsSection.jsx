@@ -32,14 +32,14 @@ export const CallsSection = () => {
             </span>
           </div>
           <div className="calls_section__filters">
-            <div className="calls_section__filter">Все типы</div>
-            <div className="calls_section__filter">Все сотрудники</div>
-            <div className="calls_section__filter">
+            <span className="calls_section__filter">Все типы</span>
+            <span className="calls_section__filter">Все сотрудники</span>
+            <span className="calls_section__filter">
               <SelectItem />
-            </div>
-            <div className="calls_section__filter">Все источники</div>
-            <div className="calls_section__filter">Все оценки</div>
-            <div className="calls_section__filter">Все ошибки</div>{' '}
+            </span>
+            <span className="calls_section__filter">Все источники</span>
+            <span className="calls_section__filter">Все оценки</span>
+            <span className="calls_section__filter">Все ошибки</span>{' '}
           </div>
         </div>
 

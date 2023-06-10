@@ -161,6 +161,7 @@ export const Dates = () => {
             className="dates__input"
             popperClassName="dates__input_calendar"
           />
+          <Calendar />
         </button>
       </div>
     </div>
